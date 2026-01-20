@@ -8,7 +8,7 @@ A Lightweight 3D Medical Image Segmentation Model
 
 ### Data downloading 
 
-Data is from [https://arxiv.org/abs/2305.17033](https://arxiv.org/abs/2305.17033)
+Data is from
 
 
 ### Preprocessing
