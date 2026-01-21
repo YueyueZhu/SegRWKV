@@ -118,7 +118,7 @@ data/
     └── ...
 ```
 
-## ⚡ Preprocessing, training, testing, inference, and metrics computation
+## ⚡ Preprocessing, training, and testing
 
 ### Brain Tumour - BraTS2023，BraTS2024 and MSD Task01
 
