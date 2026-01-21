@@ -118,14 +118,11 @@ data/
     └── ...
 ```
 
-## Preprocessing, training, testing, inference, and metrics computation
+## ⚡ Preprocessing, training, testing, inference, and metrics computation
 
-### Data downloading 
+### Brain Tumour - BraTS2023，BraTS2024 and MSD Task01
 
-Data is from
-
-
-### Preprocessing
+#### Preprocessing
 In my setting, the data directory of BraTS2023 is : "./data/raw_data/BraTS2023/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/"
 
 First, we need to run the rename process.
@@ -141,3 +138,10 @@ python 2_preprocessing_mri.py
 ```
 
 After pre-processing, the data structure will be in this format:
+
+### Other organs - AMOS 2022 and MSD Task02-Task10
+
+#### Preprocessing
+
+
+
