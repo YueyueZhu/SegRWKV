@@ -8,11 +8,115 @@
 
 > SegRWKV is a hierarchical encoder-decoder network composed of 5×6 cascaded modules.
 
+![image](./Pictures/SegRWKV.png)
 
 > Cross-dimensional Feature Enhancement and Cross-dimensional Feature Integration.
 
+![image](./Pictures/CFI_CFE.png)
 
 > X-Shift and Tri-Directional Flatten.
+
+![image](./Pictures/X_shift_TriDF.png)
+
+> Example Results on BraTS2024.
+
+![image](./Pictures/Results_BraTS_2023.png)
+
+> Visual Results on BraTS2023.
+
+![image](./Pictures/visual_BraTS_2023_01.png)
+
+## ⚡ Data downloading
+
+### BraTS 2023 and BraTS 2024
+
+Data of BraTS 2023 is from [https://www.synapse.org/Synapse:syn51156910/wiki/621282](https://www.synapse.org/Synapse:syn51156910/wiki/621282)
+
+Data of BraTS 2024 is from [https://www.synapse.org/Synapse:syn53708249/wiki/626323](https://www.synapse.org/Synapse:syn53708249/wiki/626323)
+
+The data structure will be in this format:
+
+```text
+data/
+└── ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/
+    ├── BraTS-GLI-00000-000/
+    │   ├── BraTS-GLI-00000-000-seg.nii.gz
+    │   ├── BraTS-GLI-00000-000-t1c.nii.gz
+    │   ├── BraTS-GLI-00000-000-t1n.nii.gz
+    │   ├── BraTS-GLI-00000-000-t2f.nii.gz
+    │   └── BraTS-GLI-00000-000-t2w.nii.gz
+    ├── BraTS-GLI-00002-000/
+    │   ├── BraTS-GLI-00002-000-seg.nii.gz
+    │   ├── BraTS-GLI-00002-000-t1c.nii.gz
+    │   ├── BraTS-GLI-00002-000-t1n.nii.gz
+    │   ├── BraTS-GLI-00002-000-t2f.nii.gz
+    │   └── BraTS-GLI-00002-000-t2w.nii.gz
+    ├── BraTS-GLI-00003-000/
+    │   ├── BraTS-GLI-00003-000-seg.nii.gz
+    │   ├── BraTS-GLI-00003-000-t1c.nii.gz
+    │   ├── BraTS-GLI-00003-000-t1n.nii.gz
+    │   ├── BraTS-GLI-00003-000-t2f.nii.gz
+    │   └── BraTS-GLI-00003-000-t2w.nii.gz
+    ├── BraTS-GLI-00005-000/
+    │   └── ...
+    ├── BraTS-GLI-00006-000/
+    │   └── ...
+    └── ...
+```
+
+### AMOS 2022
+ 
+Data is from [https://amos22.grand-challenge.org/](https://amos22.grand-challenge.org/)
+
+The data structure will be in this format:
+
+```text
+AMOS_2022/
+└── amos22/
+    ├── imagesTr/
+    │   ├── amos_0001.nii.gz
+    │   ├── amos_0004.nii.gz
+    │   ├── amos_0005.nii.gz
+    │   └── ...
+    ├── imagesVal/
+    │   └── ...
+    ├── labelsTr/
+    │   ├── amos_0001.nii.gz
+    │   ├── amos_0004.nii.gz
+    │   ├── amos_0005.nii.gz
+    │   └── ...
+    ├── labelsVal/
+    │   └── ...
+    ├── dataset.json
+    └── readme.md
+```
+
+### MSD Task01-Task10
+
+Data is from [http://medicaldecathlon.com/](http://medicaldecathlon.com/)
+
+The Task01-Task10 structure is similar to AMOS2022.
+
+For the needs of the experiment, we need to organize Task01_SrainTumour into the following data structure.
+
+```text
+data/
+└── ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/
+    ├── BRATS_001/
+    │   ├── img.nii.gz
+    │   └── seg.nii.gz
+    ├── BRATS_002/
+    │   ├── img.nii.gz
+    │   └── seg.nii.gz
+    ├── BRATS_003/
+    │   ├── img.nii.gz
+    │   └── seg.nii.gz
+    ├── BRATS_004/
+    │   └── ...
+    ├── BRATS_005/
+    │   └── ...
+    └── ...
+```
 
 ## Preprocessing, training, testing, inference, and metrics computation
 
