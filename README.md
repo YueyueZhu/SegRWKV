@@ -1,8 +1,18 @@
-# SegRWKV
-A Lightweight 3D Medical Image Segmentation Model
+<div align="center">
+	
+# 🧩 SegRWKV: Linear-Complexity RWKV for Efficient 3D Medical Image Segmentation
+
+</div>
+
+## The overall architecture of SegRWKV
+
+> SegRWKV is a hierarchical encoder-decoder network composed of 5×6 cascaded modules.
 
 
+> Cross-dimensional Feature Enhancement and Cross-dimensional Feature Integration.
 
+
+> X-Shift and Tri-Directional Flatten.
 
 ## Preprocessing, training, testing, inference, and metrics computation
 
