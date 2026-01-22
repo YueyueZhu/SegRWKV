@@ -136,18 +136,21 @@ data/
 ### Brain Tumour - BraTS2023，BraTS2024 and MSD Task01
 
 #### Preprocessing
-In my setting, the data directory of BraTS2023 is : "./data/raw_data/BraTS2023/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/"
+In my setting, the data directory of BraTS2023 is : "./data/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/";
+			   the data directory of BraTS2024 is : "./data/BraTS2024-BraTS-GLI-TrainingData/";
+			   the data directory of MSD Task01 is : "./data/Task01_BrainTumour/".
 
-First, we need to run the rename process.
+
+First, we need to run the rename process (Only for BraTS2023 and BraTS2024).
 
 ```bash 
-python 1_rename_mri_data.py
+python 1_rename_mri_data_BraTS2023.py    or    python 1_rename_mri_data_BraTS2024.py
 ```
 
-Then, we need to run the pre-processing code to do resample, normalization, and crop processes.
+Then, we need to run the pre-processing code to do resample, normalization, and crop processes (For all three datasets).
 
 ```bash
-python 2_preprocessing_mri.py
+python 2_preprocessing_BraTS2023.py    or    python 2_preprocessing_BraTS2024.py    or    python 2_preprocessing_Task1.py
 ```
 
 After pre-processing, the data structure will be in this format:
