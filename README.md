@@ -86,7 +86,7 @@ Data is from [https://amos22.grand-challenge.org/](https://amos22.grand-challeng
 The data structure will be in this format:
 
 ```text
-AMOS_2022/
+data/
 └── amos22/
     ├── imagesTr/
     │   ├── amos_0001.nii.gz
@@ -116,7 +116,7 @@ For the needs of the experiment, we need to organize Task01_BrainTumour into the
 
 ```text
 data/
-└── ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/
+└── Task01_BrainTumour/
     ├── BRATS_001/
     │   ├── img.nii.gz
     │   └── seg.nii.gz
