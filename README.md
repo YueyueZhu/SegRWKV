@@ -177,7 +177,13 @@ python 4_predict_assemble_save.py
 
 ### Other organs - AMOS 2022 and MSD Task02-Task10
 
-#### Preprocessing
+#### Training 
+
+The preprocessing process is embedded within the training process, we can train our model.
+
+```bash 
+python main_train_AMOS_2022.py    or    python main_train_MSD_Task02_10.py
+```
 
 
 
