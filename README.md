@@ -6,8 +6,6 @@
 
 ## The overall architecture of SegRWKV
 
-> SegRWKV is a hierarchical encoder-decoder network composed of 5×6 cascaded modules.
-
 ![image](./Pictures/SegRWKV.png)
 
 | Cross-dimensional Feature Enhancement and Cross-dimensional Feature Integration. | X-Shift and Tri-Directional Flatten. |
