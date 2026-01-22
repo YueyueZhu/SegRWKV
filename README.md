@@ -10,13 +10,9 @@
 
 ![image](./Pictures/SegRWKV.png)
 
-> Cross-dimensional Feature Enhancement and Cross-dimensional Feature Integration.
-
-![image](./Pictures/CFI_CFE.png)
-
-> X-Shift and Tri-Directional Flatten.
-
-![image](./Pictures/X_shift_TriDF.png)
+| Cross-dimensional Feature Enhancement and Cross-dimensional Feature Integration. | X-Shift and Tri-Directional Flatten. |
+|---|---|
+| ![CFI_CFE](./Pictures/CFI_CFE.png) | ![X_shift_TriDF](./Pictures/X_shift_TriDF.png) |
 
 > Example Results on BraTS2024.
 
@@ -34,9 +30,19 @@ Data of BraTS 2023 is from [https://www.synapse.org/Synapse:syn51156910/wiki/621
 
 Data of BraTS 2024 is from [https://www.synapse.org/Synapse:syn53708249/wiki/626323](https://www.synapse.org/Synapse:syn53708249/wiki/626323)
 
-The data structure will be in this format:
+The BraTS 2023/2024 structure will be in this format:
 
-```text
+<table style="width: 100%; table-layout: fixed;">
+  <thead>
+    <tr>
+      <th align="center">BraTS 2023</th>
+      <th align="center">BraTS 2024</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td valign="top">
+<pre>
 data/
 └── ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/
     ├── BraTS-GLI-00000-000/
@@ -46,23 +52,32 @@ data/
     │   ├── BraTS-GLI-00000-000-t2f.nii.gz
     │   └── BraTS-GLI-00000-000-t2w.nii.gz
     ├── BraTS-GLI-00002-000/
-    │   ├── BraTS-GLI-00002-000-seg.nii.gz
-    │   ├── BraTS-GLI-00002-000-t1c.nii.gz
-    │   ├── BraTS-GLI-00002-000-t1n.nii.gz
-    │   ├── BraTS-GLI-00002-000-t2f.nii.gz
-    │   └── BraTS-GLI-00002-000-t2w.nii.gz
-    ├── BraTS-GLI-00003-000/
-    │   ├── BraTS-GLI-00003-000-seg.nii.gz
-    │   ├── BraTS-GLI-00003-000-t1c.nii.gz
-    │   ├── BraTS-GLI-00003-000-t1n.nii.gz
-    │   ├── BraTS-GLI-00003-000-t2f.nii.gz
-    │   └── BraTS-GLI-00003-000-t2w.nii.gz
-    ├── BraTS-GLI-00005-000/
     │   └── ...
-    ├── BraTS-GLI-00006-000/
+    ├── BraTS-GLI-00003-000/
     │   └── ...
     └── ...
-```
+</pre>
+      </td>
+      <td valign="top">
+<pre>
+data/
+└── BraTS2024-BraTS-GLI-TrainingData/
+    ├── BraTS-GLI-00005-100/
+    │   ├── BraTS-GLI-00005-100-seg.nii.gz
+    │   ├── BraTS-GLI-00005-100-t1c.nii.gz
+    │   ├── BraTS-GLI-00005-100-t1n.nii.gz
+    │   ├── BraTS-GLI-00005-100-t2f.nii.gz
+    │   └── BraTS-GLI-00005-100-t2w.nii.gz
+    ├── BraTS-GLI-00005-101/
+    │   └── ...
+    ├── BraTS-GLI-00006-100/
+    │   └── ...
+    └── ...
+</pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ### AMOS 2022
  
