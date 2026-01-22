@@ -112,7 +112,7 @@ Data is from [http://medicaldecathlon.com/](http://medicaldecathlon.com/)
 
 The Task01-Task10 structure is similar to AMOS 2022.
 
-For the needs of the experiment, we need to organize Task01_BrainTumour into the following data structure.
+For the needs of the experiment, we need to organize Task01_BrainTumour into the following data structure (similar to BraTS 2023/2024).
 
 ```text
 data/
