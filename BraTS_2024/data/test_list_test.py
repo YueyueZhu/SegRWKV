@@ -1,0 +1,1 @@
+test_list = ['BraTS-GLI-01295-000', 'BraTS-GLI-00099-001', 'BraTS-GLI-00568-000']
