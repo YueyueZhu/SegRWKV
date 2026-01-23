@@ -164,7 +164,7 @@ We mainly use the pre-processde data from last step: **data_dir = ./data/train_f
 python 3_train.py
 ```
 
-#### Inference 
+#### Testing
 
 When we have trained our models, we can inference all the data in testing set.
 
@@ -179,11 +179,21 @@ python 4_predict_assemble_save.py
 
 #### Training 
 
-The preprocessing process is embedded within the training process, we can train our model.
+The **preprocessing** process is embedded within the training process, we can train our model.
+
+Choose the  **'train'** mode：
+ **parser.add_argument('--mode', type=str, default='train', help='Training or testing mode')**
 
 ```bash 
 python main_train_AMOS_2022.py    or    python main_train_MSD_Task02_10.py
 ```
+#### Testing
 
+Choose the  **'validation'** mode：
+ **parser.add_argument('--mode', type=str, default='validation', help='Training or testing mode')**
+
+```bash 
+python main_train_AMOS_2022.py    or    python main_train_MSD_Task02_10.py
+```
 
 
