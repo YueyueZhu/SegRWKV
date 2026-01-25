@@ -131,6 +131,18 @@ data/
     └── ...
 ```
 
+## ⚡ Data downloading
+
+### Configuring your environment
+
+Creating a virtual environment in terminal: `conda create -n SegRWKV python=3.10`
+
+Enter the environment: `conda activate SegRWKV`
+
+Install the necessary packages: `pip install -r requirements.txt`
+
+
+
 ## ⚡ Preprocessing, training, and testing
 
 ### Brain Tumour - BraTS2023，BraTS2024 and MSD Task01
