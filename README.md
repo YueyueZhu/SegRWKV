@@ -131,7 +131,7 @@ data/
     └── ...
 ```
 
-## ⚡ Data downloading
+## ⚡ Environment install
 
 ### Configuring your environment
 
