@@ -147,7 +147,7 @@ Install the necessary packages: `pip install -r requirements.txt`
 
 ### Brain Tumour - BraTS2023，BraTS2024 and MSD Task01
 
-#### Preprocessing
+#### 🆓 Preprocessing
 In my setting, the data directory of BraTS2023 is : **"./data/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/"**;
 			   the data directory of BraTS2024 is : **"./data/BraTS2024-BraTS-GLI-TrainingData/"**;
 			   the data directory of MSD Task01 is : **"./data/Task01_BrainTumour/"**.
@@ -165,7 +165,7 @@ Then, we need to run the pre-processing code to do resample, normalization, and 
 python 2_preprocessing_BraTS2023.py    or    python 2_preprocessing_BraTS2024.py    or    python 2_preprocessing_Task1.py
 ```
 
-#### Training 
+#### 🆓 Training 
 
 When the pre-processing process is done, we can train our model.
 
@@ -176,7 +176,7 @@ We mainly use the pre-processde data from last step: **data_dir = ./data/train_f
 python 3_train.py
 ```
 
-#### Testing
+#### 🆓 Testing
 
 When we have trained our models, we can inference all the data in testing set.
 
@@ -189,7 +189,7 @@ python 4_predict_assemble_save.py
 
 ### Other organs - AMOS 2022 and MSD Task02-Task10
 
-#### Training 
+#### 🆓 Training 
 
 The **preprocessing** process is embedded within the training process, we can train our model.
 
@@ -199,7 +199,7 @@ Choose the  **'train'** mode:
 ```bash 
 python main_train_AMOS_2022.py    or    python main_train_MSD_Task02_10.py
 ```
-#### Testing
+#### 🆓 Testing
 
 Choose the  **'validation'** mode:
  **parser.add_argument('--mode', type=str, default='validation', help='Training or testing mode')**
