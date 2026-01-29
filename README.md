@@ -12,11 +12,11 @@
 |---|---|
 | ![CFI_CFE](./Pictures/CFI_CFE.png) | ![X_shift_TriDF](./Pictures/X_shift_TriDF.png) |
 
-> Example Results on BraTS2024.
+> Example Results on BraTS 2024.
 
 ![image](./Pictures/Results_BraTS_2023.png)
 
-> Visual Results on BraTS2023.
+> Visual Results on BraTS 2023.
 
 ![image](./Pictures/visual_BraTS_2023_01.png)
 
@@ -145,19 +145,19 @@ Install the necessary packages: `pip install -r requirements.txt`
 
 ## ⚡ Preprocessing, training, and testing
 
-### Brain Tumour - BraTS2023，BraTS2024 and MSD Task01
+### Brain Tumour - BraTS 2023，BraTS 2024 and MSD Task01
 
 #### 🆓 Preprocessing
 In my setting:
 
-The data directory of BraTS2023 is : **"./data/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/"**;
+The data directory of BraTS 2023 is : **"./data/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/"**;
 			   
-The data directory of BraTS2024 is : **"./data/BraTS2024-BraTS-GLI-TrainingData/"**;
+The data directory of BraTS 2024 is : **"./data/BraTS2024-BraTS-GLI-TrainingData/"**;
 			   
 The data directory of MSD Task01 is : **"./data/Task01_BrainTumour/"**.
 
 
-First, we need to run the rename process (Only for BraTS2023 and BraTS2024).
+First, we need to run the rename process (Only for BraTS 2023 and BraTS 2024).
 
 ```bash 
 python 1_rename_mri_data_BraTS2023.py    or    python 1_rename_mri_data_BraTS2024.py
@@ -176,8 +176,8 @@ When the pre-processing process is done, we can train our model.
 **Dataset Splits**
 | Dataset / Task                 | Test list path / Notes                                                                 |
 |--------------------------------|---------------------------------------------------------------------------------------|
-| BraTS2023                      | `./BraTS_2023/data/test_list.py`                                                     |
-| BraTS2024                      | `./BraTS_2024/data/test_list.py`                                                     |
+| BraTS 2023                      | `./BraTS_2023/data/test_list.py`                                                     |
+| BraTS 2024                      | `./BraTS_2024/data/test_list.py`                                                     |
 | MSD Task01                     | `./MSD_Task01/data/test_list.py`                                                     |
 | MSD Task02–Task10              | Dataset partitioning used **random seed = 0** (ensures reproducibility)              |
 
