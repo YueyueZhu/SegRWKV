@@ -148,9 +148,13 @@ Install the necessary packages: `pip install -r requirements.txt`
 ### Brain Tumour - BraTS2023，BraTS2024 and MSD Task01
 
 #### 🆓 Preprocessing
-In my setting, the data directory of BraTS2023 is : **"./data/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/"**;
-			   the data directory of BraTS2024 is : **"./data/BraTS2024-BraTS-GLI-TrainingData/"**;
-			   the data directory of MSD Task01 is : **"./data/Task01_BrainTumour/"**.
+In my setting:
+
+The data directory of BraTS2023 is : **"./data/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/"**;
+			   
+The data directory of BraTS2024 is : **"./data/BraTS2024-BraTS-GLI-TrainingData/"**;
+			   
+The data directory of MSD Task01 is : **"./data/Task01_BrainTumour/"**.
 
 
 First, we need to run the rename process (Only for BraTS2023 and BraTS2024).
@@ -169,6 +173,15 @@ python 2_preprocessing_BraTS2023.py    or    python 2_preprocessing_BraTS2024.py
 
 When the pre-processing process is done, we can train our model.
 
+**Dataset Splits**
+| Dataset / Task                 | Test list path / Notes                                                                 |
+|--------------------------------|---------------------------------------------------------------------------------------|
+| BraTS2023                      | `./BraTS_2023/data/test_list.py`                                                     |
+| BraTS2024                      | `./BraTS_2024/data/test_list.py`                                                     |
+| MSD Task01                     | `./MSD_Task01/data/test_list.py`                                                     |
+| MSD Task02–Task10              | Dataset partitioning used **random seed = 0** (ensures reproducibility)              |
+
+
 We mainly use the pre-processde data from last step: **data_dir = ./data/train_fullres_process**
 
 
@@ -180,8 +193,11 @@ python 3_train.py
 
 When we have trained our models, we can inference all the data in testing set.
 
-We mainly use the pre-processde data from "Preprocessing" step: **data_dir = ./data/train_fullres_process**, the original data (**"./data/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/" || "./data/BraTS2024-BraTS-GLI-TrainingData/" || "./data/Task01_BrainTumour/"**), 
-and the parameter you get from last step: **model_path = ./data/3D_parameter/SegRWKV_BraTS_2023.pth || ./data/3D_parameter/SegRWKV_BraTS_2024.pth || ./data/3D_parameter/SegRWKV_Task01_BrainTumour.pth**.
+We mainly use the pre-processde data from "Preprocessing" step: **data_dir = ./data/train_fullres_process**; 
+
+The original data (**"./data/ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/" || "./data/BraTS2024-BraTS-GLI-TrainingData/" || "./data/Task01_BrainTumour/"**);
+
+And the parameter you get from last step: **model_path = ./data/3D_parameter/SegRWKV_BraTS_2023.pth || ./data/3D_parameter/SegRWKV_BraTS_2024.pth || ./data/3D_parameter/SegRWKV_Task01_BrainTumour.pth**.
 
 ```bash 
 python 4_predict_assemble_save.py
